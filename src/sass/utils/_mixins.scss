@@ -1,7 +1,7 @@
    
 @mixin device-size($size) {
   @if $size==phone {
-    @media (max-width: 320px) {
+    @media (min-width: 320px) {
       @content;
     }
   } @else if $size==phone-tablet {
