@@ -1,0 +1,42 @@
+.container {
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+@include device-size(tablet-phone) {
+    .container {
+        min-width: 575px;
+        padding-left: 33px;
+        padding-right: 33px;
+        margin: 0 auto;
+    }
+}
+
+@include device-size(tablet) {
+    .container {
+        min-width: 767px;
+        padding-left: 39px;
+        padding-right: 30px;
+        margin: 0 auto;
+    }
+}
+
+@include device-size(tablet-desktop) {
+    .container {
+        min-width: 992px;
+        padding-left: 32px;
+        padding-right: 26px;
+        margin: 0 auto;
+    }
+}
+
+@include device-size(desktop) {
+    .container {
+        min-width: 1200px;
+        margin: 0 auto;
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+}
