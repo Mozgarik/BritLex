@@ -1,11 +1,12 @@
 .container {
-    max-width: 320px;
+    min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
 
-@include device-size(tablet-phone) {
+
+@include device-size(phone-tablet) {
     .container {
         min-width: 575px;
         padding-left: 33px;

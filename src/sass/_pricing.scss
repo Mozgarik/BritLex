@@ -1,0 +1,83 @@
+.pricing {
+    padding-top: 84px;
+    &__list {
+        margin-top: 91px;
+    }
+    &__tittle {
+        text-align: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 3.3px;
+        color: #000000;
+
+    }
+    &__item {
+        list-style: none;
+        flex-direction: flex;
+        text-align: center;
+        padding: 0px;
+    }
+}
+
+.pricing-list {
+    &__tittle {
+        margin-top: 29px;
+        color: #263238;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.56;
+    }
+    &__description {
+        margin-top: 23px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: center;
+        color: #8F95A5;
+    }
+    &__price {
+        margin-top: 31px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 170px;
+        height: 37px;
+        left: 82px;
+        top: 4463px;
+        background: #EEEEEE;
+        border-radius: 5px;
+    }
+    &__value {
+        margin: 0px;
+        flex-direction: flex;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #263238; 
+    }
+    &__price-description {
+        width: 78px;
+        height: 21px;
+        margin-top: 5px;
+        margin-bottom: 7px;
+        margin-left: 7px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #546269;
+    }
+    
+}

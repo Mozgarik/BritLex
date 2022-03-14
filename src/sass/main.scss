@@ -3,7 +3,11 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
+// Стили для файла с примером HTML-фрагмента|
+@import './variables';
+@import './mixins';
+@import './container';
+@import './base';
 @import './about-us';
 @import './contact-us';
 @import './footer';
