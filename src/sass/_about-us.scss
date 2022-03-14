@@ -1,0 +1,53 @@
+.about-us__title {
+  color: $mainColor;
+  font-family: sans-serif, 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 3.33;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.about-us__description {
+  font-family: sans-serif, 'Poppins';
+  color: $accentColor;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.53;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-us__list {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.about-us__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &:not(:last-child) {
+    margin-bottom: 45px;
+  }
+  .item-title {
+    color: #2a3246;
+    font-family: sans-serif, 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 3.33;
+    margin-bottom: 5px;
+  }
+  .item-description {
+    color: $accentColor;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.53;
+  }
+}

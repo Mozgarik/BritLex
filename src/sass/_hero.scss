@@ -1,0 +1,41 @@
+.hero-picture {
+  max-width: 299px;
+  max-height: 299px;
+  margin-bottom: 45px;
+}
+.hero-title {
+  display: block;
+  color: $mainColor;
+  font-family: sans-serif, 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  width: 210px;
+  margin: 0 auto;
+}
+.hero-description {
+  font-family: sans-serif, 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 20px auto 35px;
+}
+.hero-btn {
+  background-color: $secondColor;
+  color: $additionalColor;
+  font-family: sans-serif, 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 18px auto;
+  width: 290px;
+  height: 60px;
+  outline: none;
+  border: 1px solid $secondColor;
+  border-radius: 5px;
+}
