@@ -1,7 +1,8 @@
 .hero-picture {
+  display: block;
   max-width: 299px;
   max-height: 299px;
-  margin-bottom: 45px;
+  margin: 0 auto 30px;
 }
 .hero-title {
   display: block;
@@ -25,6 +26,7 @@
   margin: 20px auto 35px;
 }
 .hero-btn {
+  display: block;
   background-color: $secondColor;
   color: $additionalColor;
   font-family: sans-serif, 'Poppins';
@@ -38,4 +40,5 @@
   outline: none;
   border: 1px solid $secondColor;
   border-radius: 5px;
+  margin: 0 auto;
 }
