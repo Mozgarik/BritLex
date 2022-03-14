@@ -1,5 +1,4 @@
-   
-@mixin device-size($size) {
+   @mixin device-size($size) {
   @if $size==phone {
     @media (min-width: 320px) {
       @content;
