@@ -8,6 +8,9 @@
         @include device-size(phone-tablet) {
            margin-top: 71px;
         }
+        @include device-size(tablet) {
+        margin-top: 40px;
+        }
     }
     &__tittle {
         text-align: center;
@@ -28,7 +31,10 @@
         flex-direction: flex;
         text-align: center;
         padding: 0px;
-        @include device-size(phone-tablet) {
+        @include device-size(tablet) {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
         }
     }
     &__icon1 {
@@ -40,6 +46,10 @@
             height: 291px;
             width: 291px;
         }
+        @include device-size(tablet) {
+            width: 197px;
+            height: 197px; 
+        }
     }
     &__icon2 {
         margin-left: auto;
@@ -50,6 +60,10 @@
             width: 314px;
             height: 291px;
         }
+        @include device-size(tablet) {
+            width: 219px;
+            height: 168px;
+        }
     }
     &__icon3 {
         margin-left: auto;
@@ -59,6 +73,10 @@
         @include device-size(phone-tablet) {
             width: 291px;
             height: 291px;
+        }
+        @include device-size(tablet) {
+            width: 210px;
+            height: 210px;   
         }
     }
 }
@@ -76,6 +94,12 @@
             font-size: 24px;
             font-weight: 1.17;
         }
+        @include device-size(tablet) {
+            width: 164px;
+            text-align: start;
+            font-size: 22px;
+            line-height: 1.55;
+        }
     }
     &__description {
         margin-top: 23px;
@@ -89,6 +113,11 @@
         @include device-size(phone-tablet) {
             font-size: 14px;
             line-height: 21px;
+        }
+        @include device-size(tablet) {
+            width: 200px;
+            text-align: start;
+            height: 72px;
         }
     }
     &__price {
@@ -106,6 +135,9 @@
         @include device-size(phone-tablet) {
             width: 205px;
             height: 45px;
+        }
+        @include device-size(tablet) {
+            margin-left: 0px;
         }
     }
     &__value {
