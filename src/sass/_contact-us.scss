@@ -3,8 +3,8 @@
     @include device-size(phone-tablet) {
      padding-top: 163px;   
     }
-    &__tittle, .tablet-is-hidden {
-        display: block;
+    &__tittle {
+        display: flex;
         justify-content: center;
         align-items: center;
         height: 80px;
@@ -14,37 +14,10 @@
         font-size: 24px;
         line-height: 80px;
         @include device-size(phone-tablet) {
-            display: none;
             font-size: 30px;
             line-height: 80px;
         }
-        @include device-size(tablet) {
-            display: none;
-        }
     }
-
-    &__tittle, .mobile-is-hidden {
-        display: none;
-        @include device-size(phone-tablet) {
-            display: block;
-            font-size: 30px;
-            line-height: 80px;
-        }
-        @include device-size(tablet) {
-            display: block;
-            width: 169px;
-            height: 80px;
-        }
-    }
-
-    &__div {
-        @include device-size(tablet) {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-    }
-
     &__icon {
         margin-top: 43px;
         width: 236px;
@@ -54,22 +27,16 @@
           width: 334px;
           height: 297px;  
         }
-        @include device-size(tablet) {
-            margin: 0px;
-            width: 233px;
-            height: 210px;
-        }
     }
     &__svg {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    &__img {
+    &__div {
         display: flex;
         justify-content: center;
         align-items: center;
-        
     }
     &__description {
         text-align: center;
@@ -87,25 +54,10 @@
             line-height: 24px;
             margin-top: 60px;
         }
-        @include device-size(tablet) {
-            line-height: 21px;
-            text-align: start;
-            margin-top: 0px;
-            width: 390px;
-        }
     }
-
-    &__form-description {
-        @include device-size(tablet) {
-         margin-left: 48px;
-         margin-bottom: 45px;
-        }
-    } 
-
     &__form {
         position: relative;
     }
-
     &__form-input {
         position: relative;
         display: block;
@@ -120,25 +72,17 @@
         font-size: 12px;
         line-height: 18px;
         color: #8F95A5;
-
-        margin-top: 31px;
-
         padding-left: 26px;
         padding-top: 16px;
         padding-bottom: 16px;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         @include device-size(phone-tablet) {
-        width: 100%;
+        width: 511px;
         height: 60px;
         border: 1px solid #8F95A5;
         box-sizing: border-box;
         border-radius: 10px;
         margin-top: 60px;
-        }
-        @include device-size(tablet) {
-            width: 283px;
-            height: 50px;
-            margin-top: 0px;
         }
         &:hover,
         &:focus{
@@ -147,13 +91,6 @@
             box-sizing: border-box;
             border-radius: 5px;
         }
-    }
-    &__form {
-        @include device-size(tablet) {
-           display: flex; 
-           align-items: center;
-           padding-top: 26px;
-        }   
     }
     &__form-button {
         display: inline-block;
@@ -165,33 +102,21 @@
         padding-top: 20px;
         padding-bottom: 19px;
         color: white;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 21px;
         @include device-size(phone-tablet) {
-
-         position: absolute;
-         margin-top: -61px;
-
          top: -16px;
          right: 0px;  
-
          width: 193px;
          height: 60px;
          background: #263238;
          border-radius: 10px;
         }
-        @include device-size(tablet) {
-         position: relative;   
-         margin-top: 0px;
-         width: 145px;
-         height: 50px;
-         padding-top: 15px;
-         padding-bottom: 15px;
-         margin-left: 4px;
-        }
+    }
+    &__form-description {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
     }
 }
 
