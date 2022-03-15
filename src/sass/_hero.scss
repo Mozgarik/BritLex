@@ -1,8 +1,14 @@
+.hero {
+  margin-top: 0;
+}
 .hero-picture {
   display: block;
   max-width: 299px;
   max-height: 299px;
   margin: 0 auto 30px;
+}
+.hero-after-el {
+  display: none;
 }
 .hero-title {
   display: block;
@@ -16,13 +22,18 @@
   width: 210px;
   margin: 0 auto;
 }
+.hero-title-br {
+  display: none;
+}
 .hero-description {
+  color: $accentColor;
   font-family: sans-serif, 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
+  width: 265px;
   margin: 20px auto 35px;
 }
 .hero-btn {
@@ -34,11 +45,89 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  padding: 18px auto;
+  padding: 18px 0px;
   width: 290px;
   height: 60px;
   outline: none;
-  border: 1px solid $secondColor;
+  border: none;
   border-radius: 5px;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+@include device-size(phone-tablet) {
+  .hero-picture {
+    max-width: 424px;
+    max-height: 424px;
+  }
+  .hero-title {
+    font-size: 34px;
+    line-height: 1.32;
+    width: 500px;
+  }
+  .hero-description {
+    width: 390px;
+  }
+  .hero-btn {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 24px auto;
+    width: 305px;
+    height: 75px;
+  }
+}
+@include device-size(tablet) {
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    max-width: 704px;
+  }
+  .hero__tablet-container {
+    max-width: 352px;
+    margin-top: 40px;
+    position: relative;
+  }
+  .hero-picture {
+    max-width: 352px;
+    margin-right: 0;
+  }
+  .hero-title {
+    display: none;
+  }
+  .hero-title-br {
+    display: block;
+
+    color: $mainColor;
+    font-family: sans-serif, 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.25;
+    text-align: left;
+    width: 210px;
+    margin-right: auto;
+  }
+  .hero-after-el {
+    display: inline;
+    position: absolute;
+    top: 65px;
+    left: 210px;
+    width: 75px;
+    height: 75px;
+  }
+  .hero-description {
+    width: 295px;
+    text-align: left;
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.56;
+  }
+  .hero-btn {
+    font-size: 18px;
+    line-height: 1.5;
+    width: 236px;
+    height: 65px;
+    margin: 0;
+  }
 }

@@ -1,6 +1,8 @@
 .about-us__picture {
   display: block;
   margin: 0 auto;
+  width: 300px;
+  height: 300px;
 }
 .about-us__title {
   color: $mainColor;
@@ -53,5 +55,83 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 1.53;
+  }
+}
+@include device-size(phone-tablet) {
+  .about-us__picture {
+    width: 352px;
+    height: 352px;
+  }
+  .about-us__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 2.66;
+    margin-bottom: 24px;
+  }
+  .about-us__description {
+    font-size: 14px;
+    max-width: 510px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .about-us__list {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: row;
+  }
+  .about-us__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+    .item-description {
+      font-size: 14px;
+    }
+  }
+}
+@include device-size(tablet) {
+  .about-us__container {
+    max-width: 704px;
+  }
+  .about-us__title {
+    text-align: left;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .about-us__desktop-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 704px;
+    margin: 0 auto;
+  }
+  .about-us__picture {
+    width: 295px;
+    height: 295px;
+    margin-right: 0;
+  }
+  .about-us__description-container {
+    width: 352px;
+    margin-top: 20px;
+  }
+  .about-us__description {
+    text-align: left;
+    width: 290px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .about-us__list {
+    margin: 0;
+    justify-content: space-between;
+    width: 290px;
+    .item-description {
+      font-size: 13px;
+    }
   }
 }
