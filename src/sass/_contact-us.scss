@@ -81,7 +81,6 @@
         text-align: center;
         color: #8F95A5;
         margin-top: 31px;
-        margin-bottom: 30px;
         @include device-size(phone-tablet) {
             font-size: 14px;
             line-height: 24px;
@@ -94,21 +93,14 @@
             width: 390px;
         }
     }
-
     &__form-description {
         @include device-size(tablet) {
          margin-left: 48px;
          margin-bottom: 45px;
         }
     } 
-
-    &__form {
-        position: relative;
-    }
-
     &__form-input {
         position: relative;
-        display: block;
         outline: none;
         width: 100%;
         border: 1px solid #8F95A5;
@@ -120,9 +112,7 @@
         font-size: 12px;
         line-height: 18px;
         color: #8F95A5;
-
         margin-top: 31px;
-
         padding-left: 26px;
         padding-top: 16px;
         padding-bottom: 16px;
@@ -156,8 +146,6 @@
         }   
     }
     &__form-button {
-        display: inline-block;
-        position: absolute;
         width: 100%;
         background: #263238;
         border-radius: 5px;
@@ -171,13 +159,9 @@
         font-size: 14px;
         line-height: 21px;
         @include device-size(phone-tablet) {
-
          position: absolute;
          margin-top: -61px;
-
-         top: -16px;
-         right: 0px;  
-
+         right: 0px;   
          width: 193px;
          height: 60px;
          background: #263238;
