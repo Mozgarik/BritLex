@@ -14,6 +14,9 @@
   text-align: center;
   margin-bottom: 24px;
 }
+.about-us__title-desktop {
+  display: none;
+}
 .about-us__description {
   font-family: sans-serif, 'Poppins';
   color: $accentColor;
@@ -132,6 +135,105 @@
     width: 290px;
     .item-description {
       font-size: 13px;
+    }
+  }
+}
+@include device-size(tablet-desktop) {
+  .about-us__container {
+    max-width: 920px;
+  }
+  .about-us__title {
+    display: none;
+  }
+  .about-us__title-desktop {
+    display: block;
+    color: $mainColor;
+    font-family: sans-serif, 'Poppins';
+    text-align: left;
+    margin: 0 0 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 2.22;
+  }
+
+  .about-us__desktop-container {
+    max-width: 920px;
+  }
+  .about-us__picture {
+    width: 336px;
+    height: 336px;
+    margin-right: 0;
+    margin-top: 55px;
+  }
+  .about-us__description-container {
+    width: 460px;
+    margin-top: 20px;
+  }
+  .about-us__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 452px;
+  }
+  .about-us__list {
+    margin: 0;
+    justify-content: space-between;
+    width: 370px;
+    .item-title {
+      font-size: 30px;
+      line-height: 2.66;
+    }
+    .item-description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}
+
+@include device-size(desktop) {
+  .about-us__container {
+    max-width: 1160px;
+  }
+  .about-us__title-desktop {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.66;
+  }
+
+  .about-us__desktop-container {
+    margin-top: 0;
+    max-width: 1160px;
+  }
+  .about-us__picture {
+    width: 500px;
+    height: 500px;
+    margin-right: 0;
+    margin-top: 0px;
+  }
+  .about-us__description-container {
+    width: 660px;
+    margin-top: 20px;
+  }
+  .about-us__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    min-width: 569px;
+    margin-bottom: 55px;
+  }
+  .about-us__list {
+    width: 540px;
+    .item-title {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 1.66;
+    }
+    .item-description {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.5;
     }
   }
 }
