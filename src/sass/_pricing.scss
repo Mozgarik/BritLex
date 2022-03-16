@@ -3,6 +3,12 @@
     @include device-size(phone-tablet) {
         padding-top: 131px;
     }
+    @include device-size(tablet-desktop) {
+        padding-top: 126px;
+    }
+    @include device-size(desktop) {
+       padding-top: 222px;     
+    }
     &__list {
         margin-top: 91px;
         @include device-size(phone-tablet) {
@@ -10,6 +16,12 @@
         }
         @include device-size(tablet) {
         margin-top: 40px;
+        }
+        @include device-size(tablet-desktop) {
+        margin-top: 47px; 
+        }
+        @include device-size(desktop) {
+         margin-top: 71px;   
         }
     }
     &__tittle {
@@ -24,7 +36,14 @@
             font-size: 30px;
             line-height: 2.67;
         }
-
+        @include device-size(tablet-desktop) {
+        font-size: 34px;   
+        line-height: 2.22;
+        }
+        @include device-size(desktop) {
+         font-size: 48px;
+         line-height: 1.67;   
+        }
     }
     &__item {
         list-style: none;
@@ -50,6 +69,14 @@
             width: 197px;
             height: 197px; 
         }
+        @include device-size(tablet-desktop) {
+            width: 222px;
+            height: 222px;
+        }
+        @include device-size(desktop) {
+            width: 311px;
+            height: 311px;
+        }
     }
     &__icon2 {
         margin-left: auto;
@@ -63,6 +90,14 @@
         @include device-size(tablet) {
             width: 219px;
             height: 168px;
+        }
+        @include device-size(tablet-desktop) {
+            width: 267px;
+            height: 195px;
+        }
+        @include device-size(desktop) {
+            width: 391px;
+            height: 283px;
         }
     }
     &__icon3 {
@@ -78,6 +113,14 @@
             width: 210px;
             height: 210px;   
         }
+        @include device-size(tablet-desktop) {
+         width: 242px;
+         height: 242px;   
+        }
+        @include device-size(desktop) {
+         width: 340px;
+         height: 340px;   
+        }
     }
 }
 
@@ -92,13 +135,22 @@
         line-height: 1.56;
         @include device-size(phone-tablet) {
             font-size: 24px;
-            font-weight: 1.17;
+            line-height: 2.22;
         }
         @include device-size(tablet) {
             width: 164px;
             text-align: start;
             font-size: 22px;
             line-height: 1.55;
+        }
+        @include device-size(tablet-desktop) {
+            width: 273px;
+            line-height: 2.18;
+        }
+        @include device-size(desktop) {
+            width: 372px;
+            font-size: 30px;
+            line-height: 1.60;  
         }
     }
     &__description {
@@ -107,18 +159,30 @@
         font-style: normal;
         font-weight: 400;
         font-size: 13px;
-        line-height: 20px;
+        line-height: 1.5;
         text-align: center;
         color: #8F95A5;
         @include device-size(phone-tablet) {
             font-size: 14px;
-            line-height: 21px;
+            line-height: 1.5;
         }
         @include device-size(tablet) {
             width: 200px;
             text-align: start;
             height: 72px;
         }
+        @include device-size(tablet-desktop) {
+            width: 300px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        @include device-size(desktop) {
+            width: 350px;
+            font-size: 20px;
+            line-height: 1.5;
+            height: 100px;
+        }
+
     }
     &__price {
         margin-top: 31px;
@@ -139,6 +203,9 @@
         @include device-size(tablet) {
             margin-left: 0px;
         }
+        @include device-size(desktop) {
+            width: 240px;   
+        }
     }
     &__value {
         margin: 0px;
@@ -147,11 +214,19 @@
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        line-height: 27px;
+        line-height: 1.5;
         color: #263238; 
         @include device-size(phone-tablet) {
           font-size: 18px;
-          line-height: 33px;  
+          line-height: 1.4px;  
+        }
+        @include device-size(tablet-desktop) {
+            font-size: 24px;
+            line-height: 1.5;
+        }
+        @include device-size(desktop) {
+            font-size: 30px;
+            line-height: 1.5;
         }
     }
     &__price-description {
@@ -164,13 +239,19 @@
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 21px;
+        line-height: 1.5px;
         color: #546269;
         @include device-size(phone-tablet) {
             width: 89px;
             height: 24px;
             font-size: 16px;
-            line-height: 24px;
+            line-height: 1.5;
+        }
+        @include device-size(desktop) {
+            width: 100px;
+            height: 27px;
+            font-size: 18px;
+            line-height: 1.5;   
         }
     }
 }
