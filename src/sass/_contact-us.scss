@@ -3,6 +3,12 @@
     @include device-size(phone-tablet) {
      padding-top: 163px;   
     }
+    @include device-size(tablet-desktop) {
+     padding-top: 140px;       
+    }
+    @include device-size(desktop) {
+     padding-top: 261px;       
+    }
     &__tittle, .tablet-is-hidden {
         display: block;
         justify-content: center;
@@ -12,7 +18,7 @@
         font-family: 'Poppins';
         font-weight: 600;
         font-size: 24px;
-        line-height: 80px;
+        line-height: 2.66px;
         @include device-size(phone-tablet) {
             display: block;
             font-size: 30px;
@@ -28,12 +34,22 @@
         @include device-size(phone-tablet) {
             display: none;
             font-size: 30px;
-            line-height: 80px;
+            line-height: 2.66;
         }
         @include device-size(tablet) {
             display: block;
             width: 169px;
             height: 80px;
+        }
+        @include device-size(tablet-desktop) {
+         width: 202px;
+         font-size: 36px;
+         line-height: 2.22;   
+        }
+        @include device-size(desktop) {
+            font-size: 48px;
+            line-height: 1.67;
+            width: 269px;
         }
     }
 
@@ -59,6 +75,14 @@
             width: 233px;
             height: 210px;
         }
+        @include device-size(tablet-desktop) {
+            width: 292px;
+            height: 260px;
+        }
+        @include device-size(desktop) {
+            width: 446px;
+            height: 396px;   
+        }
     }
     &__svg {
         display: flex;
@@ -77,21 +101,32 @@
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 21px;
+        line-height: 1.5;
         text-align: center;
         color: #8F95A5;
         margin-top: 31px;
         @include device-size(phone-tablet) {
             font-size: 14px;
-            line-height: 24px;
+            line-height: 1.5;
             margin-top: 60px;
         }
         @include device-size(tablet) {
-            line-height: 21px;
+            line-height: 1.5;
             text-align: start;
             margin-top: 0px;
             width: 390px;
         }
+        @include device-size(tablet-desktop) {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        @include device-size(desktop) {
+            font-size: 20px;
+            line-height: 1.5;
+            width: 776px;
+            margin-top: 37px;
+            margin-bottom: 52px;
+        }   
     }
     &__form-description {
         @include device-size(tablet) {
@@ -110,7 +145,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
-        line-height: 18px;
+        line-height: 2.2;
         color: #8F95A5;
         margin-top: 31px;
         padding-left: 26px;
@@ -130,12 +165,26 @@
             height: 50px;
             margin-top: 0px;
         }
+        @include device-size(tablet-desktop) {
+            width: 323px;
+            height: 60px;   
+            padding-left: 38px;
+            padding-top: 23px;
+            padding-bottom: 16px;
+        }
+        @include device-size(desktop) {
+            width: 450px;
+            height: 80px;
+            padding-top: 26px;
+            padding-bottom: 30px;
+            padding-left: 33px;
+        }
         &:hover,
         &:focus{
             border-color: none;
             border: 1px solid #111111;
             box-sizing: border-box;
-            border-radius: 5px;
+            border-radius: 10px;
         }
     }
     &__form {
@@ -157,7 +206,7 @@
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 21px;
+        line-height: 1.5;
         @include device-size(phone-tablet) {
          position: absolute;
          margin-top: -61px;
@@ -175,6 +224,20 @@
          padding-top: 15px;
          padding-bottom: 15px;
          margin-left: 4px;
+        }
+        @include device-size(tablet-desktop) {
+         width: 193px;
+         height: 60px;  
+         padding-top: 21px;
+         padding-bottom: 15px; 
+         margin-left: 14px;
+        }
+        @include device-size(desktop) {
+         width: 264px;
+         height: 80px;
+         padding-top: 25px;
+         padding-bottom: 25px;
+          margin-left: 12px;
         }
     }
 }
