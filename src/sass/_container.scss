@@ -1,43 +1,42 @@
 .container {
-    min-width: 320px;
+  min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@include device-size(phone-tablet) {
+  .container {
+    min-width: 575px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-}
-
-
-@include device-size(phone-tablet) {
-    .container {
-        min-width: 575px;
-        padding-left: 33px;
-        padding-right: 33px;
-        margin: 0 auto;
-    }
+  }
 }
 
 @include device-size(tablet) {
-    .container {
-        min-width: 767px;
-        padding-left: 39px;
-        padding-right: 39px;
-        margin: 0 auto;
-    }
+  .container {
+    min-width: 767px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
 }
 
 @include device-size(tablet-desktop) {
-    .container {
-        min-width: 992px;
-        padding-left: 31px;
-        padding-right: 31px;
-        margin: 0 auto;
-    }
+  .container {
+    min-width: 992px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
 }
 
 @include device-size(desktop) {
-    .container {
-        min-width: 1200px;
-        margin: 0 auto;
-        padding-left: 129px;
-        padding-right: 131px;
-    }
+  .container {
+    min-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
