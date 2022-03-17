@@ -1,0 +1,145 @@
+// mobile 320px
+.header__page{
+    padding-top : 36px;
+    padding-bottom: 30px;
+}
+.header__nav-list{
+    display: none;
+}
+.header__button{
+    display: none;
+}
+.header__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.header__logo-link {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 1.5; 
+color: $mainColor;
+}
+
+.header__logo-link--accent{
+    color:#939393;;
+}
+
+.header__burger-btn{
+    width: 34px;
+    height: 19px;
+}
+.header__burger-icon{
+    width: 100%;
+    height: 100%;
+    color: #39515E;
+}
+
+//mobile-tablet 595px
+@include device-size(phone-tablet){
+    .header__page{
+       
+        padding-top : 40px;
+        padding-bottom: 15px;
+    }
+    .header__logo-link {
+        font-size: 30px;
+        }
+    .header__burger-btn{
+            width: 42px;
+            height: 24px;
+        }
+
+}
+
+//tablet 767px
+@include device-size(tablet){
+    .header__page{
+        padding-bottom: 40px;
+    }
+    .header__burger-btn{
+            width: 30px;
+            height: 17px;
+        }
+
+}
+
+//tablet-desctop 992px
+@include device-size(tablet-desktop){
+    .header__page{
+        display: flex;
+        justify-content: space-between;
+        padding-top : 30px;
+        padding-bottom: 68px;
+
+    }
+    .header__burger-btn{
+        display: none;
+    }
+   
+    .header__nav-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 422px;
+        
+    }
+    .header__nav-link{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $secondColor;
+    }
+    .header__button{
+        display: block;
+        width: 160px;
+        height: 50px;
+        padding: 12px,40px;
+        border: 2px solid $secondColor;
+        border-radius: 5px;
+
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5;
+        color: $mainColor;
+    }
+}
+
+//desktop 1200px
+@include device-size(desktop){
+    .header__page{
+        padding-top : 50px;
+        padding-bottom: 55px;
+
+    }
+    .header__logo-link {
+        font-size: 36px;
+        }
+    
+        .header__nav-list{
+            width: 518px;
+            
+        }
+        .header__nav-link{
+            
+            font-size: 20px;
+            
+        }
+     .header__button{
+            width: 220px;
+            height: 70px;
+            padding: 17px,57px;
+        
+            font-size: 24px;
+            
+        }
+
+}
