@@ -1,5 +1,16 @@
+.contact-us__container {
+    @include device-size(tablet) {
+        max-width: 773px;
+    }
+    @include device-size(tablet-desktop) {
+        max-width: 962px;
+        }
+    @include device-size(desktop) {
+        max-width: 1170px;
+    }
+}
 .contact-us {
-    padding-top: 72px;
+    padding-top: 72px;    
     @include device-size(phone-tablet) {
      padding-top: 163px;   
     }
@@ -7,7 +18,7 @@
      padding-top: 140px;       
     }
     @include device-size(desktop) {
-     padding-top: 261px;       
+     padding-top: 261px;     
     }
     &__tittle, .tablet-is-hidden {
         display: block;
