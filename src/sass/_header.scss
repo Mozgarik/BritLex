@@ -1,5 +1,6 @@
 // mobile 320px
 .header__page{
+    min-width: 320px;
     padding-top : 36px;
     padding-bottom: 30px;
 }
@@ -41,7 +42,7 @@ color: $mainColor;
 //mobile-tablet 595px
 @include device-size(phone-tablet){
     .header__page{
-       
+        max-width: 595px;
         padding-top : 40px;
         padding-bottom: 15px;
     }
@@ -58,6 +59,7 @@ color: $mainColor;
 //tablet 767px
 @include device-size(tablet){
     .header__page{
+        max-width: 767px;
         padding-bottom: 40px;
     }
     .header__burger-btn{
@@ -72,6 +74,7 @@ color: $mainColor;
     .header__page{
         display: flex;
         justify-content: space-between;
+        max-width: 992px;
         padding-top : 30px;
         padding-bottom: 68px;
 
@@ -116,6 +119,7 @@ color: $mainColor;
 //desktop 1200px
 @include device-size(desktop){
     .header__page{
+        max-width: 1200px;
         padding-top : 50px;
         padding-bottom: 55px;
 
