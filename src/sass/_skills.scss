@@ -2,6 +2,9 @@
 .skills__desctop{
     display: none;
 }
+.skills__container{
+    min-width: 320px;
+}
 .skills__main-title{
 margin-bottom: 32px;
 
@@ -81,19 +84,21 @@ color: $additionalColor;
 //mobile-tablet 575px
 
 @include device-size(phone-tablet) {
+
     .skills__main-title{
         font-size: 30px;
         line-height: 2.7;
+        margin-bottom: 34px;
     }
-
+    .skills__container{
+        max-width: 575px;
+    }
     .skills__list{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         flex-basis: calc((100%-60px) / 2);
-    //   align-items: center;
-    //   margin-top: -30px;
-    //   margin-left: -30px;
+
       }
 
     .skills__item{
@@ -141,44 +146,287 @@ color: $additionalColor;
     .skills__desctop{
         display: block;
     }
+    .skills__container{
+        max-width: 767px;
+    }
+    .skills__main-title{
+        margin-bottom: 36px;
+    }
+    
     .skills__list{
-        display: flex;
+        height: 692px;
         flex-wrap: nowrap;
-        justify-content: center;
+        // justify-content: center;
     }
     .skills__right-part{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 490px;
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        width: 488px;
 
+    }
+    .skills__top-right-part{
+        display: flex;
+        margin-bottom: 10px;
+        height: 452px;
     }
     .skills__item{
         margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        width: 239px;
+        height: 100%;
         &.speaking{
-            width: 240px;
-            height: 100%;
             margin-right: 10px;
         }
         &.writing{
-            height: 440px;
             margin-right: 10px;
         }
-        &.reading{
-            height: 440px;
-        }
+        // &.reading{
+        // }
     
-        &:last-child{
+        &.listening{
             flex-direction: row-reverse;
             align-items: center;
             align-content: center;
-            width: 490px;
-            height: 210px;
+            width: 488px;
+            height: 230px;
+        }
+    }
+
+    .skills__img-box{
+        margin: 0 auto;
+        width: 220px;
+        height: 220px;
+
+        &.listening{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .skills__img{
+        &.listening{
+            margin: auto 8px;
         }
     }
     
     .skills__text-box{
+        padding-left: 17px;
+        height: 272px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &.speaking{
+            height: 442px;
+        }
+        &.listening{
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-between;
+            justify-content: center;
+            padding-left: 22px;
+            // height: 230px;
+            height: 100%;
+        }
+
+    }
+
+    .skills__title{
+        font-size: 20px;
+        line-height: 4;
+        padding-left: 0px;
+    
+    }
+    .skills__direction{
+        font-size: 13px;
+        padding-left: 0px;
+        // padding-top: 23px;
+        margin-bottom: 0px;
+    }
+
+    .skills__direction:not(:last-child){
+        margin-bottom: 0px;
+    }
+
+    .skills__button{
+        margin-bottom: 26px;
+        margin-top: 13px;
+        padding-left: 0px;
+        margin-left: 0px;
+    
+        width: 200px; 
+    }
+
+}
+
+// tablet-desctop 992px
+@include device-size(tablet-desktop){
+    .skills__container{
+        max-width: 992px;
+    }
+    .skills__main-title{
+        font-size: 36px;
+        line-height: 2.2;
+        margin-bottom: 58px;
+    }
+    .skills__list{
+        height: 712px;
+       
+    }
+    .skills__right-part{
+        width: 712px;
+
+    }
+    .skills__top-right-part{
+        margin-bottom: 13px;
+        height: 467px;
+    }
+
+
+    .skills__item{
+        width: 312px;
+        
+        &.speaking{
+            margin-right: 13px;
+        }
+        &.writing{
+            margin-right: 13px;
+        }
+    
+        &.listening{
+            // padding-top:24px ;
+            width: 637px;
+            height: 232px;
+        }
+    }
+    .skills__img-box{
+        width: 250px;
         height: 200px;
     }
+
+    .skills__text-box{
+        padding-left: 28px;
+        height: 272px;
+       
+        &.speaking{
+            height: 442px;
+        }
+        &.listening{
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-between;
+            padding-left: 32px;
+            // height: 230px;
+            
+        }
+
+    }
+    .skills__title{
+        font-size: 22px;
+        line-height: 3.64;
+        
+    }
+    .skills__direction{
+        font-size: 14px;
+       
+    }
+    .skills__button{
+        margin-bottom: 30px;
+        margin-top: 20px;
+    
+    }
+
+}
+
+//desctop 1200px
+@include device-size(desktop){
+    .skills__container{
+        max-width:1200px ;
+    }
+    .skills__main-title{
+        font-size: 48px;
+        line-height: 1.67;
+        margin-bottom: 92px;
+    }
+    .skills__list{
+        height: 814px;
+       
+    }
+    .skills__right-part{
+        width: 814px;
+
+    }
+    .skills__top-right-part{
+        margin-bottom: 18px;
+
+        height: 522px;
+    }
+    .skills__item{
+        width: 378px;
+        
+        &.speaking{
+            margin-right: 18px;
+        }
+        &.writing{
+
+            margin-right: 18px;
+        }
+       
+        &.listening{
+            // padding-top:24px ;
+            width: 774px;
+            height: 274px;
+        }
+    }
+    .skills__img-box{
+        width: 350px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+
+        &.listening{
+            margin: 0 20px;
+        }
+    }
+
+
+    .skills__text-box{
+        padding-left: 42px;
+        padding-right: 42px;
+        height: 312px;
+
+
+        &.listening{
+            padding-left: 48px;
+        }
+        &.speaking{
+            height: 540px; 
+        }
+
+
+    }
+
+    .skills__title{
+        font-size: 30px;
+        line-height: 2.67;
+        
+    }
+
+    .skills__direction{
+        font-size: 16px;
+       
+    }
+
+    .skills__button{
+        width: 230px;
+        height: 60px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
 
 }
