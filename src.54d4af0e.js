@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/point.svg":[["point.d4a72d6d.svg","zjx0"],"zjx0"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/BritLex/src.28da8afb.js.map
+//# sourceMappingURL=/BritLex/src.54d4af0e.js.map
