@@ -91,7 +91,7 @@
             height: 260px;
         }
         @include device-size(desktop) {
-            width: 446px;
+            width: 406px;
             height: 396px;   
         }
     }
@@ -134,7 +134,7 @@
         @include device-size(desktop) {
             font-size: 20px;
             line-height: 1.5;
-            width: 776px;
+            width: 746px;
             margin-top: 37px;
             margin-bottom: 52px;
         }   
@@ -184,7 +184,7 @@
             padding-bottom: 16px;
         }
         @include device-size(desktop) {
-            width: 450px;
+            width: 445px;
             height: 80px;
             padding-top: 26px;
             padding-bottom: 30px;
@@ -244,7 +244,7 @@
          margin-left: 14px;
         }
         @include device-size(desktop) {
-         width: 264px;
+         width: 250px;
          height: 80px;
          padding-top: 25px;
          padding-bottom: 25px;
